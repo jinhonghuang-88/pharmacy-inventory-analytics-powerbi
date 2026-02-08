@@ -11,14 +11,14 @@ A portfolio project demonstrating end-to-end BI delivery for a retail pharmacy s
 - Monthly Sales Trend + **3-month rolling average** (secondary axis)
 - Store slicer for segmentation
 
-![Executive Summary](assets/executive-summary.png)
+![Executive Summary](executive-summary.png)
 
 ### 2) Inventory & Stockout
 - Stockout Days KPI + monthly trend
 - **Top 10 products** by Stockout Days (Top-N filter + descending sort)
 - Store slicer for store-specific investigation
 
-![Inventory & Stockout](assets/inventory-stockout.png)
+![Inventory & Stockout](inventory-stockout.png)
 
 ## Skills demonstrated
 - Power BI (Power Query, modelling, visuals)
