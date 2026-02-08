@@ -28,6 +28,6 @@ A portfolio project demonstrating end-to-end BI delivery for a retail pharmacy s
 
 ## Sharing
 - **PBIX available upon request.**
-- Optional: attach `case-study.pdf` for recruiter-friendly viewing.
+Download the one-page case study: case-study.pdf
 
 
