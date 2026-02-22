@@ -1,33 +1,39 @@
 # Pharmacy Inventory & Sales Analytics (Power BI)
 
-A portfolio project demonstrating end-to-end BI delivery for a retail pharmacy scenario: data preparation, star-schema modelling, KPI definition, and interactive dashboards for sales performance and stockout risk.
+Portfolio project demonstrating end-to-end BI delivery for a retail pharmacy scenario: data preparation, star-schema modelling, KPI design, and interactive dashboards to monitor profitability and stockout risk.
 
-> **Data note:** This project uses a **synthetic dataset** (safe to share publicly). No employer/customer data is used.
+> **Data note:** Synthetic dataset for portfolio demonstration. No employer/customer data is used.
+
+## Highlights
+- **Star schema model** (dim_date, dim_store, dim_product, dim_supplier) across sales, inventory snapshots, invoices and purchase orders
+- **Advanced DAX**: KPIs, MoM variance, YTD, and 3-month rolling average
+- **Stockout analytics**: Stockout Rate %, Stockout SKU Count, and **Estimated Lost Sales (AUD)** (impact-based prioritisation)
+- **Interactive analysis**: Top-N drivers, **report-page tooltips**, **drill-through Product Detail**, and **Reset filters** button (Bookmarks)
+- QA validation table to verify time-intelligence calculations
 
 ## Dashboards
 
-### 1) Executive Summary — Sales & Inventory
-- KPI cards: Total Sales, Total COGS, Gross Profit, Gross Margin %, Stockout Days
-- Monthly Sales Trend + **3-month rolling average** (secondary axis)
-- Store slicer for segmentation
+### 1) Executive Summary
+- Monthly KPIs (Sales, Profit, Margin, Stockout)
+- MoM change (variance & pp) + YTD summary
+- Sales trend: Actual vs 3M rolling average
 
-![Executive Summary](executive-summary.png)
+![Executive Summary](executive-summary-v2.png)
 
 ### 2) Inventory & Stockout
-- Stockout Days KPI + monthly trend
-- **Top 10 products** by Stockout Days (Top-N filter + descending sort)
-- Store slicer for store-specific investigation
+- Stockout trend
+- Top products by Stockout Days (incl. ties)
+- Top products by Estimated Lost Sales (AUD)
 
 ![Inventory & Stockout](inventory-stockout.png)
 
-## Skills demonstrated
-- Power BI (Power Query, modelling, visuals)
-- DAX measures (profitability KPIs, rolling average)
-- Star schema (dim_date, dim_store, dim_product, dim_supplier)
-- Operational analytics (inventory snapshot + stockout drivers)
+## How to use
+1. Select **Reporting Month** and **Store**
+2. Hover on Top-N bars to view **tooltips**
+3. Right-click a product to **drill through** to Product Detail
+4. Click **Reset filters** to return to the default view
 
-## Sharing
-- **PBIX available upon request.**
-Download the one-page case study: case-study.pdf
-
-
+## Files
+- Screenshots are stored in `/assets`
+- `case-study.pdf` (optional) — recruiter-friendly one-page summary
+- PBIX available upon request
