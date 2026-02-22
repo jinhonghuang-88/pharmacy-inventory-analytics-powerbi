@@ -35,5 +35,5 @@ Portfolio project demonstrating end-to-end BI delivery for a retail pharmacy sce
 
 ## Files
 - Screenshots are stored in `/assets`
-- `case-study.pdf` (optional) — recruiter-friendly one-page summary
+- `case-study.pdf` 
 - PBIX available upon request
